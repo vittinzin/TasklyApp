@@ -7,13 +7,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import com.vitor.taskly.R;
 import com.vitor.taskly.controller.RegisterController;
 import com.vitor.taskly.controller.RegisterDbController;
 import com.vitor.taskly.model.Login;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity{
 
 
     private TextView signUp;

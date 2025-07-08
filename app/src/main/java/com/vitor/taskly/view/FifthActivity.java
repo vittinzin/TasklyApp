@@ -14,7 +14,7 @@ import com.vitor.taskly.R;
 import com.vitor.taskly.controller.TaskDbController;
 import com.vitor.taskly.model.Task;
 
-public class FifthActivity extends AppCompatActivity {
+public class FifthActivity extends BaseActivity {
 
     private ImageView homePage, taskPage;
     private Button addBtn;
@@ -43,9 +43,18 @@ public class FifthActivity extends AppCompatActivity {
             );
 
             taskDbController.insert(task.getTaskName(), task.getDescription());
-
                 Intent intent = new Intent(FifthActivity.this, FourthActivity.class);
                 startActivity(intent);
+        });
+
+        homePage.setOnClickListener(v -> {
+            Intent intent = new Intent(FifthActivity.this, ThirdActivity.class);
+            startActivity(intent);
+        });
+
+        taskPage.setOnClickListener(v ->{
+            Intent intent = new Intent(FifthActivity.this, FourthActivity.class);
+            startActivity(intent);
         });
 
     }

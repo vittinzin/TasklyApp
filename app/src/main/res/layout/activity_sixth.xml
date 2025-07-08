@@ -5,36 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vitor.taskly.view.ThirdActivity">
-
-    <TextView
-        android:id="@+id/addNewPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="➕  Add a new task"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574" />
-
-    <TextView
-        android:id="@+id/seeTasks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="✔️ See your tasks"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+    tools:context=".view.SixthActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbar9"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="#0A84FF"
@@ -43,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbar10"
         android:layout_width="415dp"
         android:layout_height="81dp"
         android:background="#0A84FF"
@@ -56,20 +30,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="273dp"
-        android:layout_height="367dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/tasklt" />
-
-    <ImageView
-        android:id="@+id/homePage"
+        android:id="@+id/homePage4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +43,7 @@
         app:srcCompat="@drawable/baseline_home_24" />
 
     <ImageView
-        android:id="@+id/taskPage"
+        android:id="@+id/taskPage4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,17 +54,24 @@
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/baseline_add_task_24" />
 
-    <TextView
-        android:id="@+id/editTaskPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="🔄  Edit tasks"
-        android:textSize="22sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="349dp"
+        android:layout_height="467dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
-        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintVertical_bias="0.31" />
 
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="417dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
 </androidx.constraintlayout.widget.ConstraintLayout>

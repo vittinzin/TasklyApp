@@ -12,7 +12,7 @@ import com.vitor.taskly.controller.RegisterController;
 import com.vitor.taskly.controller.RegisterDbController;
 import com.vitor.taskly.model.Register;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends BaseActivity {
 
     private Register register;
     private RegisterController registerController;

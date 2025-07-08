@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".view.FourthActivity">
 
+    <Button
+        android:id="@+id/editTask"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#0A84FF"
+        android:text="Edit Tasks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar5"
         android:layout_width="0dp"
@@ -67,14 +80,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="350dp"
-        android:layout_height="396dp"
+        android:layout_width="320dp"
+        android:layout_height="356dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -88,8 +101,8 @@
 
     <Button
         android:id="@+id/addNewBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
         android:backgroundTint="#0A84FF"
         android:text="Add new task"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,6 +110,6 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.796" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

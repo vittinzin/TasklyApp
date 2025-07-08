@@ -49,4 +49,10 @@ public class TaskDbController {
         db.close();
         return taskList;
     }
+
+    public void deleteTask(String id) {
+        SQLiteDatabase db = tdb.getWritableDatabase();
+        db.delete("taskData", "taskName = ?", new String[]{String.valueOf(id)});
+        db.close();
+    }
 }

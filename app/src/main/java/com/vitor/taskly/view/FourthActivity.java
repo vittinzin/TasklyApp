@@ -21,14 +21,14 @@ import com.vitor.taskly.model.Task;
 
 import java.util.List;
 
-public class FourthActivity extends AppCompatActivity {
+public class FourthActivity extends BaseActivity {
 
     private ImageView homePage;
     private RecyclerView recyclerList;
     private SearchView searchView;
     private TaskDbController taskDbController;
     private List<Task> taskList;
-    private Button addButton;
+    private Button addButton, editButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class FourthActivity extends AppCompatActivity {
         recyclerList = findViewById(R.id.recyclerView);
         searchView = findViewById(R.id.searchView);
         addButton = findViewById(R.id.addNewBtn);
+        editButton = findViewById(R.id.editTask);
         taskDbController = new TaskDbController(this);
 
         taskList = taskDbController.getAllTasks();
@@ -62,12 +63,12 @@ public class FourthActivity extends AppCompatActivity {
             }
         });
 
-       // if (!orderList.isEmpty()) {
-         //   editBtn.setOnClickListener(v -> {
-          //      Intent intent = new Intent(FourthActivity.this, SixthActivity.class);
-          //      startActivity(intent);
-          //  });
-       //}
+        if (!taskList.isEmpty()) {
+            editButton.setOnClickListener(v -> {
+                Intent intent = new Intent(FourthActivity.this, SixthActivity.class);
+                startActivity(intent);
+            });
+       }
 
         homePage.setOnClickListener(v -> {
             Intent intent = new Intent(FourthActivity.this, ThirdActivity.class);
